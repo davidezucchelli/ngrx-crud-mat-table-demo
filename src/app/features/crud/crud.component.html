@@ -1,0 +1,20 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center" fxLayoutGap="20px" fxFill>
+            <div fxFlex="15%">
+                <h1>Ngrx Crud Demo</h1>
+            </div>
+            <div fxFlex="15%">
+                <app-element-filter [filter]="filter$ | async" (setFilter)="setFilterHandler($event)"></app-element-filter>
+
+            </div>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center" fxLayoutGap="10px" style="padding:2px;">
+    <div fxFlex>
+        <button mat-raised-button color="primary" type="button" (click)="onNewElement()" style="margin: 10px;">New
+      Element</button>
+    </div>
+</div>
+<app-element-list [items]="elements$ | async" [loading]="loading$ | async"></app-element-list>

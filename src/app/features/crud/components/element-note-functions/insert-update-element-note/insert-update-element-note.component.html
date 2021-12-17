@@ -1,0 +1,24 @@
+<h3>
+    <span *ngIf="!editMode">insert new note</span>
+    <span *ngIf="editMode">update note</span>
+</h3>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="example-form">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="32px" fxFlexFill>
+        <div fxFlex>
+            <mat-form-field class="example-max-width-90">
+                <mat-label>Description</mat-label>
+                <mat-placeholder>Description</mat-placeholder>
+                <input matInput type="text" formControlName="description">
+            </mat-form-field>
+        </div>
+    </div>
+
+    <mat-dialog-actions align="end">
+        <button mat-dialog-close mat-raised-button color="primary">cancel</button>
+        <button mat-raised-button color="primary" [disabled]="!form.valid">
+      <span *ngIf="!editMode">insert</span>
+      <span *ngIf="editMode">update</span>
+    </button>
+    </mat-dialog-actions>
+</form>

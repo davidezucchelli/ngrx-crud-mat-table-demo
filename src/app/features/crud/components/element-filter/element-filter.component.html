@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="setFilterHandler()">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center" fxLayoutGap="20px" fxFill>
+        <div fxFlex>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <mat-placeholder>Name</mat-placeholder>
+                <input matInput type="text" formControlName="name">
+            </mat-form-field>
+        </div>
+
+        <button mat-raised-button color="primary" type="submit">find</button>
+    </div>
+</form>

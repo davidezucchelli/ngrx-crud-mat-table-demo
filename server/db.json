@@ -1,0 +1,112 @@
+{
+  "element": [
+    {
+      "position": 2,
+      "name": "Helium",
+      "weight": 4.0026,
+      "symbol": "He",
+      "id": 2
+    },
+    {
+      "position": 3,
+      "name": "Lithium",
+      "weight": 6.941,
+      "symbol": "Li",
+      "id": 3
+    },
+    {
+      "position": 4,
+      "name": "Beryllium",
+      "weight": 9.0122,
+      "symbol": "Be",
+      "id": 4
+    },
+    {
+      "position": 5,
+      "name": "Boron",
+      "weight": 10.811,
+      "symbol": "B",
+      "id": 5
+    },
+    {
+      "position": 6,
+      "name": "Carbon",
+      "weight": 12.0107,
+      "symbol": "C",
+      "id": 6
+    },
+    {
+      "position": 7,
+      "name": "Nitrogen",
+      "weight": 14.0067,
+      "symbol": "N",
+      "id": 7
+    },
+    {
+      "position": 8,
+      "name": "Oxygen",
+      "weight": 15.9994,
+      "symbol": "O",
+      "id": 8
+    },
+    {
+      "position": 9,
+      "name": "Fluorine",
+      "weight": 18.9984,
+      "symbol": "F",
+      "id": 9
+    },
+    {
+      "position": 10,
+      "name": "Neon",
+      "weight": 20.1797,
+      "symbol": "Ne",
+      "id": 10
+    },
+    {
+      "name": "e",
+      "weight": "e",
+      "symbol": "e",
+      "id": 11
+    },
+    {
+      "name": "eq",
+      "weight": "e",
+      "symbol": "e",
+      "position": 2,
+      "id": 12
+    }
+  ],
+  "notes": [
+    {
+      "description": "qweqwe",
+      "idElement": 1,
+      "id": 3,
+      "date": "2021-12-16T08:58:42.694Z"
+    },
+    {
+      "description": "qwe",
+      "date": "2021-12-16T08:40:43.474Z",
+      "idElement": 12,
+      "id": 4
+    },
+    {
+      "description": "g",
+      "date": "2021-12-16T08:58:48.514Z",
+      "idElement": 9,
+      "id": 5
+    },
+    {
+      "description": "eqwe",
+      "date": "2021-12-17T13:35:57.114Z",
+      "idElement": 2,
+      "id": 6
+    },
+    {
+      "description": "a",
+      "date": "2021-12-17T13:36:06.946Z",
+      "idElement": 2,
+      "id": 7
+    }
+  ]
+}

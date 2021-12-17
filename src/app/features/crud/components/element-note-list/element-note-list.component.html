@@ -1,0 +1,32 @@
+<div *ngIf="!(notes$| async)?.length ; else list">
+    No Items
+</div>
+
+<ng-template #list>
+    <ng-container *ngFor="let item of notes$ | async">
+        <hr>
+        <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="start center" fxLayoutGap="10px">
+            <div>
+                <button mat-icon-button aria-label="icon" [matMenuTriggerFor]="menu">
+          <mat-icon style="font-size: 20px;">more_vert</mat-icon>
+        </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item (click)="onUpdateNote(item)">update
+            note</button>
+                    <button mat-menu-item (click)="onDeleteNote(item)">
+            delete note
+          </button>
+                </mat-menu>
+            </div>
+            <div>
+                id:{{ item.id }}
+            </div>
+            <div>
+                description: {{ item.description }}
+            </div>
+            <div>
+                date:{{ item.date }}
+            </div>
+        </div>
+    </ng-container>
+</ng-template>
